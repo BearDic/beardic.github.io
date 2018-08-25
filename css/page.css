@@ -1,0 +1,388 @@
+@charset "utf-8";
+/* CSS Document */
+:root
+{
+	--white:#f0f0f0;
+	--black:#222222;
+	--font-size:16px;
+	--serif: "Minion Pro", Minion, MinionPro, "Lucida Bright", "DejaVu Serif", Georgia, STZhongsong, "华文中宋", STSongg, "华文宋体", SimSun, "宋体", serif;
+	--sans-serif: Avenir Next, Avenir, Helvetica neue, Helvatica, Verdana Pro, Verdana, Arial, Deng, "等线", "STHeiti Light", STXihei, "华文细黑", SimHei, "黑体", STHeiti, "华文黑体", sans-serif;
+	--monospace:consolas, "Consolas", cour, "Courier New", courier, monospace;
+}
+
+.md-shadow
+{
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: #ddd;
+}
+
+.centering
+{
+	text-align: center;
+}
+
+body
+{
+	font-family: var(--sans-serif);
+	background-color: var(--white);
+	color: var(--black);
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-size: 1em;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+
+/* main sections setting */
+div#top-bar
+{
+	background-color: #202734;
+	height: 3em;
+	position: relative;
+	width: 100%;
+}
+
+section.container, section.site-title, section.error-page
+{
+	width: 82%;
+	margin: 1.5em auto;
+	padding: 4.5% 3%;
+	background-color: white;
+}
+
+section.title-page-link
+{
+	margin: 1em 1em;
+	padding: 4.5% 3%;
+	background-color: white;
+	display: table;
+	float: left;
+}
+
+@media all and ( max-width : 600px )
+{
+	section.title-page-link
+	{
+		display: block;
+		float: none;
+	}
+}
+
+div.title-page-link-box
+{
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	zoom:1;
+}
+
+div#bottom-bar
+{
+	text-align: center;
+	clear: both;
+}
+
+/* div top-bar */
+div#top-bar a
+{
+	text-decoration: none;
+	color: white;
+}
+
+p#site-title a
+{
+	font-size: 1.5em;
+	text-align: center;
+	padding: 0.3em 0.5em;
+}
+
+p#top-bar-link a
+{
+	font-size: 1em;
+	text-align: center;
+	padding: 0.84em 0.5em;
+}
+
+div#top-bar a:hover
+{
+	background-color: #001020;
+}
+
+div#top-bar-pull-left
+{
+	display: block;
+	float: left;
+	position: relative;
+	margin: -0.60em 0 -0.52em 2%;
+}
+
+div#top-bar-pull-right
+{
+	display: block;
+	float: right;
+	position: relative;
+	margin:-0.28em 2% -0.22em 0;
+}
+
+/* div bottom-bar */
+div#bottom-bar a
+{
+	text-decoration: none;
+	color: var(--black);
+}
+
+/* section.container */
+section.container header
+{
+	border-style: solid;
+	border-bottom-color: var(--black);
+	border-width: 3px 0 1px 0;
+}
+
+section.container header h1
+{
+	font-size: 2.4em;
+	margin: 0.2em 0;
+	font-family: var(--serif);
+	font-weight: bold;
+}
+
+section.container header h2
+{
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 0.1em 0;
+}
+
+section.container header h4
+{
+	font-weight: bold;
+	color: gray;
+	margin: 0 0 0.8em 0;
+	font-size: 0.8em;
+}
+
+section.container a
+{
+	text-decoration: none;
+	color: var(--black);
+	padding-bottom: 0;
+	border-bottom: 1px var(--black) solid;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+section.container li
+{
+	list-style-position: outside;
+}
+
+section.container article > h2
+{
+	font-family: var(--serif);
+	font-weight: bold;
+	font-size: 1.8em;
+	margin-left: 0.55em;
+}
+
+section.container article > h3
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-left: 1.66em;
+}
+
+section.container blockquote
+{
+	background-color: RGB(241,251,255);
+	border-style: solid;
+	border-color: RGB(59,176,219);
+	border-width: 0 0 0 3px;
+	padding: 0.1em 3%;
+	font-family: var(--serif);
+}
+
+section.container img
+{
+	width:86%;
+	margin: 1.2em 7%; 
+}
+
+section.container p.img-caption
+{
+	text-align: center;
+	margin: -2.8em 0 2.4em 0;
+	color: gray;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+section.container pre.code
+{
+	font-size: 1em;
+	font-family: var(--monospace);
+	background-color: RGB(221,237,251);
+	padding: 1em 3%;
+	width:76%;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: RGB(0,153,204);
+}
+
+section.container table
+{
+	font-size: 0.9em;
+	border-style: solid;
+	border-color: RGB(0,153,204);
+	border-width: 2px 1px 2px 1px;
+	border-collapse: collapse;
+	margin: 2.4em auto;
+}
+
+section.container table caption
+{
+	font-weight: bold;
+}
+
+section.container table thead
+{
+	border-color: RGB(0,153,204);
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	color:white;
+	background-color: RGB(0,153,204);
+}
+
+section.container table th,td
+{
+	padding: 0.2em 0.4em;
+}
+
+section.container table tr:nth-child(2n)
+{
+	background-color: RGB(221,237,251);
+}
+
+section.container table tbody tr:nth-child(2n):hover, section.container table tbody tr:nth-child(2n):focus
+{
+	background-color: RGB(207,227,251);
+}
+
+section.container table tbody tr:nth-child(2n-1):hover, section.container table tbody tr:nth-child(2n-1):focus
+{
+	background-color: RGB(210,230,255);
+}
+
+section.container footer
+{
+	color:gray;
+	margin-top: 1em;
+	margin-bottom: -2em;
+	border-style: solid;
+	border-top-color: var(--black);
+	border-width: 2px 0 0 0;
+}
+
+section.container footer p:first-child
+{
+	margin-top: 0em;
+	text-align: right;
+	margin-bottom: 1.6em;
+}
+
+/* section.site-title */
+section.site-title header
+{
+	text-align: center;
+	font-family: var(--sans-serif);
+}
+
+section.site-title header h1
+{
+	font-size: 4em;
+	font-weight: normal;
+	display: table;
+	margin: 0.2em auto 0 auto;
+	border-bottom: 2px var(--black) solid;	
+}
+
+section.site-title header h3
+{
+	font-size: 1.25em;
+	font-weight: normal;
+	margin-top: 0.5em;
+	margin-bottom: 0.8em;
+}
+
+
+/* section.error-page */
+section.error-page header
+{
+	text-align: center;
+	font-family: var(--sans-serif);
+}
+
+section.error-page header h1
+{
+	font-family: var(--monospace);
+	font-size: 7.5em;
+	font-weight: normal;
+	margin-top: -0.2em;
+}
+
+section.error-page header h2
+{
+	font-size: 2.5em;
+	font-weight: normal;
+	display: table;
+	margin: -3.6em auto 0.1em auto;
+	border-top: 2px var(--black) solid;
+	padding-top: 0.1em;
+}
+
+/* section.title-page-link */
+section.title-page-link header
+{
+	border-style: solid;
+	border-bottom-color: var(--black);
+	border-width: 3px 0 1px 0;
+}
+
+section.title-page-link header h1
+{
+	font-size: 2.4em;
+	margin: 0.2em 0;
+	font-family: var(--serif);
+	font-weight: bold;
+}
+
+section.title-page-link header h2
+{
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 0.1em 0;
+}
+
+section.title-page-link header h4
+{
+	font-weight: bold;
+	color: gray;
+	margin: 0 0 0.8em 0;
+	font-size: 0.8em;
+}
+
+section.title-page-link a
+{
+	text-decoration: none;
+	color: var(--black);
+	padding-bottom: 0;
+	border-bottom: 1px var(--black) solid;
+	word-break: break-all;
+	word-wrap: break-word;
+}
